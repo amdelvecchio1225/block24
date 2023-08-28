@@ -1,12 +1,14 @@
 import './App.css'
 import {puppyList} from './data.js'
 import {useState} from 'react'
+import './index.css'
 
 function App() {
   const [puppies, setPuppies] = useState(puppyList);
   const [featPupId, setFeatPupId] = useState(null);
   const featuredPup = puppies.find((pup) => pup.id === featPupId);
   console.log(featuredPup);
+  console.log(puppies);
   return (
     <>
       <div className="App">
